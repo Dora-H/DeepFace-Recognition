@@ -11,11 +11,11 @@ from deepface import DeepFace
 ## Create init
     def __init__(self):
         # define paths
-        self.pathA = 'C:\\Users\\utaipei\\PycharmProjects\\pythonProject00000\\day07\\haar\\eye.xml'
-        self.pathB = 'C:\\Users\\utaipei\\PycharmProjects\\pythonProject00000\\day07\\haar\\face.xml'
-        self.pathC = 'C:\\Users\\utaipei\\PycharmProjects\\pythonProject00000\\day07\\haar\\nose.xml'
-        self.pathF1 = 'C:\\Users\\utaipei\\PycharmProjects\\pythonProject00000\\day07\\Kim.jpg'
-        self.pathF2 = 'C:\\Users\\utaipei\\PycharmProjects\\pythonProject00000\\day07\\Nam.jpg'
+        self.pathA = 'you own path\\haar\\eye.xml'
+        self.pathB = 'you own path\\haar\\face.xml'
+        self.pathC = 'you own path\\haar\\nose.xml'
+        self.pathF1 = 'you own path\\Kim.jpg'
+        self.pathF2 = 'you own path\\Nam.jpg'
 
         result = DeepFace.verify(self.pathF1, self.pathF2)
         print("Is verified: ", result["verified"])
