@@ -79,7 +79,7 @@ FaceRecognition
 ##### to analyze age, gender, emotion
             demography = DeepFace.analyze(image, ['emotion', 'age', 'gender'])
 
-##### print total faces (text color:white)
+##### print total faces (text color:green)
             input_strings = "Age:{} Gender:{} Emotion:{} "
             cv2.putText(image, input_strings.format(str(demography["age"]),
                                                     demography["gender"],
